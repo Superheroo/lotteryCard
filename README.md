@@ -1,2 +1,2 @@
 # lotteryCard
-翻拍抽奖
+翻牌抽奖
