@@ -1,0 +1,64 @@
+{
+    "code":"200",
+    "msg":"请求成功",
+    "amount":2000,
+    "data":[
+        {
+           "voltage" :"24",
+           "electricity":"20",
+           "price":"45",
+           "quota":"3",
+           "inventory":"1"
+
+        },
+        {
+            "voltage" :"36",
+            "electricity":"60",
+            "price":"145",
+            "quota":"2",
+           "inventory":"5"
+         },
+         {
+            "voltage" :"48",
+            "electricity":"30",
+            "price":"245",
+            "quota":"1",
+           "inventory":"3"
+         },
+         {
+            "voltage" :"32",
+            "electricity":"80",
+            "price":"405",
+            "quota":"6",
+           "inventory":"1"
+         },
+         {
+            "voltage" :"24",
+            "electricity":"20",
+            "price":"45",
+            "quota":"10",
+           "inventory":"8"
+         },
+         {
+             "voltage" :"36",
+             "electricity":"60",
+             "price":"145",
+             "quota":"3",
+             "inventory":"1"
+          },
+          {
+             "voltage" :"48",
+             "electricity":"30",
+             "price":"245",
+             "quota":"5",
+            "inventory":"6"
+          },
+          {
+             "voltage" :"32",
+             "electricity":"80",
+             "price":"405",
+             "quota":"2",
+            "inventory":"1"
+          }
+    ]
+}

@@ -1,0 +1,134 @@
+@import '@/style/mixin.scss';
+
+
+.stimulate {
+    background: #B81616;
+    margin: 0 auto;
+    width: 7.5rem;
+    min-height: 100vh;
+    overflow: hidden;
+    .theme {
+        background: #B81616 url('../../assets/img/turnplate-bg.png') 0 0 no-repeat;
+        background-size: 7.5rem 12.97rem;
+        width: 7.5rem;
+        height: 12.97rem;
+        border: 1px solid transparent;
+        .turnplate {
+            width: 7.12rem;
+            margin: 2.2rem auto 0;
+            position: relative;
+            img:first-child{
+                width: 7.12rem;
+                height: 7.12rem;
+            };
+            img:last-child{
+                width: 1.97rem;
+                height: 2.62rem;
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .turnplate-person {
+            text-align: center;
+            font-size: .28rem;
+            color: #e6870d;
+            -webkit-text-stroke: .009rem #FFBE04;
+            margin-top: 2.2rem;
+        }
+    };
+
+    .prize {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .9);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &-img {
+            img:first-child {
+                width: 6.71rem;
+                height: 8.82rem;
+                margin-top: 1rem;
+                margin-left: 0.3rem
+            };
+            .money{
+                position: fixed;
+                top: 6.71rem;
+                left: 48%;
+                transform: translateX(-50%);
+                color: #FFD305;
+                font-size: 1rem;
+            }
+            img:last-child {
+                width: .31rem;
+                height: .31rem;
+                position: absolute;
+                top: .5rem;
+                right: .5rem;
+            }
+        };
+        &-code {
+            font-size: .4rem;
+            font-weight: bold;
+            color: #fff;
+            position: relative;
+            bottom: 1.5rem;
+            .prize-get-code, .prize-code-again{
+                height: 1.37rem;
+                width: 4.19rem;
+                background: #D12C00;
+                border-radius: .1rem;
+                @include flex-center;
+            }
+        }
+    };
+
+    .prize-code-pop {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .9);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .prize-code-box {
+            width: 4.58rem;
+            background: #fff;
+            color: #333;
+            border-radius: .1rem;
+            padding: 0 .2rem .2rem;
+            box-sizing: border-box;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            .prize-code-title {
+                height: .9rem;
+                line-height: .9rem;
+                text-align: center;
+                border-bottom: .01rem dotted #000;
+                font-weight: bold;
+            };
+            .prize-code-number {
+                font-size: .4rem;
+                font-weight: bold;
+                color: #D12C00;
+                text-align: center;
+                margin-bottom: .1rem;
+            };
+            .close-code-pop {
+                width: .31rem;
+                height: .31rem;
+                position: absolute;
+                top: -.2rem;
+                right: -.7rem;
+            }
+        }
+    }
+}

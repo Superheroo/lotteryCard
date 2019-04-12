@@ -1,0 +1,105 @@
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin input-placeHolder {
+    input {
+        border: none;
+        outline: none;
+        text-align: right;
+        width: 100%;
+        height: 100%;
+        color: #A6A6A6;
+        &::-webkit-input-placeholder { /* WebKit browsers */
+            color: #A6A6A6;
+        }
+        &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: #A6A6A6;
+        }
+        &::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: #A6A6A6;
+        }
+        &:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color: #A6A6A6;
+        }
+    }
+}
+
+
+@mixin border {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    height: 1px;
+    content: '';
+    transform: scaleY(.5);
+    background: #F3F3F3;
+}
+
+.w-border, .h-border{
+    position: relative;
+};
+
+.w-border::after {
+ @include border();
+}
+
+
+.h-border:after {
+    @include border();
+    margin: 0 .2rem;
+}
+
+// @mixin bgPosition($spriteWidth, $spriteHeight, $iconWidth, $iconHeight, $iconX, $iconY){
+//     background-position: (($iconX / ($spriteWidth - $iconWidth)) * 100% ($iconY / ($spriteHeight - $iconHeight)) * 100%);
+// }
+
+@mixin bgPosition($spriteWidth, $spriteHeight, $iconWidth, $iconHeight, $iconX, $iconY) {
+    background-position: (($iconX / ($spriteWidth - $iconWidth)) * 100% ($iconY / ($spriteHeight - $iconHeight)) * 100%);
+}
+
+
+@mixin ranking {
+    color: #CC0000;
+    font-size: .3rem;
+    background: #fff;
+    width: .48rem;
+    height: .48rem;
+    border-radius: 50%;
+    @include flex-center;
+    font-weight: bold;
+}

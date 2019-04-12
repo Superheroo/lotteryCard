@@ -1,0 +1,46 @@
+{
+    "code":"200",
+    "msg":"请求成功",
+    "data":[
+        {
+           "voltage" :"24",
+           "electricity":"20",
+           "price":"45"
+        },
+        {
+            "voltage" :"36",
+            "electricity":"60",
+            "price":"145"
+         },
+         {
+            "voltage" :"48",
+            "electricity":"30",
+            "price":"245"
+         },
+         {
+            "voltage" :"32",
+            "electricity":"80",
+            "price":"405"
+         },
+         {
+            "voltage" :"24",
+            "electricity":"20",
+            "price":"45"
+         },
+         {
+             "voltage" :"36",
+             "electricity":"60",
+             "price":"145"
+          },
+          {
+             "voltage" :"48",
+             "electricity":"30",
+             "price":"245"
+          },
+          {
+             "voltage" :"32",
+             "electricity":"80",
+             "price":"405"
+          }
+    ]
+}
